@@ -18,7 +18,7 @@ ____
 5. Enable a user to enter a delivery location.
 
 ## **Capture**
-
+...
 ## **Technologies Used**
     HTML
     JAVASCRIPT
