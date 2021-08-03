@@ -18,7 +18,8 @@ ____
 5. Enable a user to enter a delivery location.
 
 ## **Capture**
-....
+Landing Page
+![Landing Page](/assets/landing.png)
 ## **Technologies Used**
     HTML
     JAVASCRIPT
