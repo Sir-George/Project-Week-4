@@ -16,6 +16,7 @@ ____
 3. Creating the various dropdown menus using option value in HTML.
 4. Creating functions to place an order and get the full charge of the pizza ordered.
 5. Enable a user to enter a delivery location.
+6. Giving a checkout for the price.
 
 ## **Capture**
 Landing Page 
