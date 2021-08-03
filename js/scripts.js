@@ -22,7 +22,7 @@
             case flavour = "vegtikka":
                 switch (size) {
                     case size = "regular":
-                        price = 300;
+                        price = 500;
                         if (crust === "thin") {
                             totalPrice = (price * number) + 100;
                         } else if (crust === "thick") {
@@ -34,7 +34,7 @@
                         }
                         break;
                     case size = "medium":
-                        price = 600;
+                        price = 800;
                         if (crust === "thin") {
                             totalPrice = (price * number) + 100;
                         } else if (crust === "thick") {
@@ -340,6 +340,7 @@
                 }
                 break;
         }
+        //toppings
         switch (topping) {
             case topping = "tomato":
                 totalPrice = totalPrice + 80;
@@ -377,11 +378,11 @@
 
         }
 
-        //Execute order function
+        //Execute the order function
         let newOrder = order(flavour, size, crust, topping, number, totalPrice);
         console.log(newOrder); 
 
-        //Write to the order
+        //Process Order and Write Order Information
         $('.summary').slideDown(2000);
         $('.cdata-overlay').slideUp();
         $('#list').slideDown();
@@ -389,15 +390,15 @@
         $('.delivernot').show(1000);
 
         $('#list').text(" ");
-        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
-            + newOrder.s + "<br>" + "Crust :     "
-            + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + " Number of pizzas :    "
-            + newOrder.n + "<br>" + "Total Price :  "
+        $("#list").append("<br>" + "Flavour Chosen:   " + newOrder.f + "<br>" + "Size :   "
+            + newOrder.s + "<br>" + "Crust Chosen:     "
+            + newOrder.c + "<br>" + "Toppings Chosen:     "
+            + newOrder.t + "<br>" + "Number of pizzas :    "
+            + newOrder.n + "<br>" + "Total Price Ksh  "
             + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
-       //Deliver
+       //Deliver Details
        $(".deliver").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
