@@ -26,9 +26,7 @@
             </div>
             <div class="navbar-collapse collapse" id="bs-navbar">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#one">Home</a>
-                    </li>
+                  
 
                     <li>
                         <a class="page-scroll" href="#three">Flavors</a>
@@ -40,12 +38,7 @@
                         <a class="page-scroll" href="#last">Contact Us</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme"
-                            href="#aboutModal">About</a>
-                    </li>
-                </ul>
+               
             </div>
         </div>
 
@@ -71,8 +64,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/small.png">
-                        <img src="./assets/small.png"
-                            class="img-responsive" alt="Image 1">
+                        <img src="./assets/small.png" class="img-responsive" alt="Image 1">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -83,9 +75,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal"data-src="./assets/medium2.png">
-                        <img src="./assets/medium2.png"
-                            class="img-responsive" alt="Image 2">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/medium2.png">
+                        <img src="./assets/medium2.png" class="img-responsive" alt="Image 2">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -97,9 +88,8 @@
                 </div>
                 <div class="clearfix hidden-lg"> </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal"data-src="./assets/large.png">
-                        <img src="./assets/large.png"
-                            class="img-responsive" alt="Image 3">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/large.png">
+                        <img src="./assets/large.png" class="img-responsive" alt="Image 3">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -181,7 +171,7 @@
                         required>
 
                     <hr>
-                    
+
                 </form>
                 <a href="#summary">
                     <button type="submit" class="btn btn-primary btn-block btn-lg" id="checkout">
@@ -191,37 +181,40 @@
             </div>
         </div>
     </section>
+
     <section id="summary">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="order-summary" id="sum-order">
-                <h2 class="margin-top-0 text-center text-primary" id="summary">Order Summary</h2>
+                <h2 class="margin-top-0 text-center text-primary summary" id="summary">Order Summary</h2>
                 <h3 class="text-center summary">Your order is as follows:</h3>
                 <ol id="list" class="text-center sum">
                 </ol>
 
+             
 
                 <div class="cdata-overlay">
                     <div class="customerdata row">
                         <div class="col-sm-3"></div>
-                        <form action="" class="form-group col-sm-6 data">
+                        <form class="form-group col-sm-6 data">
                             <input type="text" class="form-control cdata" placeholder="Enter your Name:">
                             <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
                             <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                            <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                            <button type="button" data-toggle="modal" data-target="#deliveryModal" class="btn btn-primary btn-sm center-block">Make Delivery</button>
                         </form>
 
                         <div class="col-sm-3"></div>
                     </div>
                 </div>
-                <!-- <div class="feature">
-                    <button class='deliver'>Make Delivery</button>
-                    <button class='delivernot'>Pick Up</button>
-                </div> -->
+
+                <button type="button" class="btn btn-primary btn-sm center-block deliver" id = "deliver" >Make Delivery</button>
+                <hr>
+                <button type="button" data-toggle="modal" data-target="#pickupModal" class="btn btn-primary btn-sm center-block delivernot" >Pick Up</button>
+              
+                
+
             </div>
-        </div>
+        <!-- </div> -->
 
-
-        </div>
     </section>
     <section id="last">
         <div class="container">
@@ -275,17 +268,14 @@
             </div>
         </div>
     </div>
-    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div id="pickupModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <h2 class="text-center">Mara Moja Pizza</h2>
-                    <h5 class="text-center">
-                        Welcome to Mara Moja Pizza!!
-                    </h5>
+                    <h2 class="text-center">How Easy!!</h2>
                     <p class="text-justify">
-                        Mara Moja pizza is an online pizza delivery system. We work with efficiency and proficiency to
-                        ensure we deliver Pizza's right to your doorstep. Welcome to an Oasis of Sweetness. Thankyou and we look foward to working with you.
+                       Your order has been received and it is being processed. Thank You for chosing Mara Moja Pizza.
                     </p>
 
                     <br />
@@ -295,12 +285,31 @@
             </div>
         </div>
     </div>
+
+    <div id="deliveryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center">Pizza is Enroute</h2>
+                    <p class="text-justify">
+                       Your order has been received and it is being processed. It will be delivered to the location that you have indicated. 
+                       Thanks for chosing Mara Moja Pizza!
+                     </p>
+                    <br />
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="text-center">Thanks!</h2>
-                    <p class="text-center">Thank You For Contacting Us! We'll get back to You shortly. Have a nice day!</p>
+                    <p class="text-center">Thank You For Contacting Us! We'll get back to You shortly. Have a nice day!
+                    </p>
                     <br />
                     <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i
                             class="ion-android-close"></i></button>
